@@ -1,0 +1,126 @@
+<!-- Backup of index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TextUtils</title>
+</head>
+<body>
+<h1>Welcome to the text analyzer. Enter your text below</h1>
+<form action='/analyze' method='get'>
+    <textarea name='text' style='margin: 0px; width: 721px; height: 93px;'></textarea><br>
+    <div>
+    <input type="checkbox" name="removepunc"> Remove Punctuation<br>
+    <input type="checkbox" name="fullcaps"> Upercase Letter<br>
+    <input type="checkbox" name="newlineremover">New Line remover<br>
+    <input type="checkbox" name="extraspaceremover"> Extra Spaces Remover<br>
+    <input type="checkbox" name="charcount"> Charactor counter<br>
+    <br>
+    <div>
+    <button type='submit'> Analyze Text</button>
+    </div>
+</form>
+    </div>
+</body>
+</html>
+<!-- Backup of index2.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <title>TextUtils</title>
+    <style>
+        .navbar{
+            border: 2px solid black;
+            background-color: rgb(76, 85, 88);
+            border-radius: 19px;
+        }
+        .navbar li{
+            list-style: none;
+            float: left;
+            margin: 13px 20px;
+        }
+        .navbar ul{
+            overflow: auto;
+        }
+        .navbar a{
+            text-decoration: none;
+            color: black;
+            font-family: cursive;
+        }
+        #name{
+            font-family: cursive;
+            font-size: large;
+            color: linen;
+        }
+        #main{
+            text-align: center;
+        }
+        #text{
+            text-align: center;
+        }
+        #textarea{
+            border: 2px solid rgb(20, 41, 30);
+            width: 1345px;
+            border-radius: 18px;
+        }
+        .center{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #Align{
+            color: white;
+            border-radius: 5px;
+        }
+        #Align:hover{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+<h1 id="main">Welcome to the TextUtils.com</h1>
+<header>
+    <nav class="navbar">
+        <ul>
+        <li id="name"><a href="#"></a>TextUtils</li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+</header>
+<h2 id="text">Enter your text below:</h2>
+<form action='/analyze' method='get'>
+    <textarea name='text' style='margin: 0px; width: 1354px; height: 175px;' align='center' id="textarea"></textarea><br>
+    <div class="custom-control custom-switch">
+        <input type="checkbox" name="removepunc" class="custom-control-input" id="customSwitch1">
+        <label class="custom-control-label" for="customSwitch1">Remove Punc</label>
+    </div>
+    <div class="custom-control custom-switch">
+        <input type="checkbox" name="fullcaps" class="custom-control-input" id="customSwitch2">
+        <label class="custom-control-label" for="customSwitch2">Upercase</label>
+    </div>
+    <div class="custom-control custom-switch">
+        <input type="checkbox" name="newlineremover" class="custom-control-input" id="customSwitch3">
+        <label class="custom-control-label" for="customSwitch3">New Line Remover</label>
+    </div>
+    <div class="custom-control custom-switch">
+        <input type="checkbox" name="extraspaceremover" class="custom-control-input" id="customSwitch4">
+        <label class="custom-control-label" for="customSwitch4">Extra Line Remover</label>
+    </div>
+    <div class="custom-control custom-switch">
+        <input type="checkbox"  name="charcount" class="custom-control-input" id="customSwitch5">
+        <label class="custom-control-label" for="customSwitch5">Character Counter</label>
+    </div>
+
+    <div class="center">
+    <button type='submit' id="Align" style="background-color: black; "> Analyze Text</button>
+    </div>
+</form>
+    </div>
+</center>
+</body>
+</html>
+
